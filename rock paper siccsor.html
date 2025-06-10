@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rock Paper Scissors Game</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+:root {
+  --color-bg: #ffffff;
+  --color-text: #374151;
+  --color-text-muted: #6b7280;
+  --color-primary: #111827;
+  --color-primary-hover: #1f2937;
+  --shadow-light: 0 4px 10px rgba(0, 0, 0, 0.05);
+  --radius: 0.75rem;
+  --transition-speed: 0.3s;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  position: sticky;
+  top: 0;
+  background: var(--color-bg);
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 10;
+  box-shadow: var(--shadow-light);
+}
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
